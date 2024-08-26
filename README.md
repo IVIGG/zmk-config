@@ -4,17 +4,24 @@ This repo contains the documentation and files to run the zmk firmaware for the 
 
 ### Table of contents
 
-- [TOTEM](#totem)
+- [TOTEM source](#totem-source)
+- [Custom Keymap](#custom-keymap)
 - [Dongle Flashing](#dongle-flashing)
 - [ZMK Keymap Editor](#zmk-keymap-editor)
 - [Shops and Useful links](#shops-and-other-useful-links)
 
-## TOTEM
+## TOTEM Source
 
-Original repositories
+Original repositories (BLE build and dongle build):
 
 - [TOTEM](https://github.com/eigatech/zmk-config/tree/totem)
 - [TOTEM Dongle](https://github.com/eigatech/zmk-config/tree/totem-dongle)
+
+## Custom Keymap
+
+This is the four-layer custom keymap adapted to my needs. It has almost all the keys from a full-sized keyboard.
+
+[ ![Keyboard Layout](./TotemCustomKeymap.png) ](./TotemCustomKeymap.png)
 
 ## Dongle Flashing
 
