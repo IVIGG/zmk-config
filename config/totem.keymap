@@ -1,15 +1,3 @@
-//
-//                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
-//                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
-//                                                        █   █  █  █   █  █  █   █  █  █   █
-//                                                         ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
-//                                                               █      ▄▄▄█▄▄▄    █   █  
-//                                                               ▀      █  █  █     █▄█
-//                                                             ▀▀▀▀▀    █  █  █      ▀
-//                                                                      ▀  ▀  ▀
-//
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -63,29 +51,29 @@
         NavNum {
             label = "NavNum";
             bindings = <
-                  &kp LALT      &kp GRAVE      &kp UP_ARROW  &kp INS    &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DIVIDE
-                  &kp LSHIFT    &kp LEFT       &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_CONTROL  &kp LEFT_WIN  &hm SQT COMMA  &kp DOT       &kp BSLH   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS       &kp KP_MULTIPLY
-                                               &trans        &trans     &trans      &trans    &trans        &kp N0
+                  &kp LALT      &kp GRAVE      &kp UP_ARROW  &kp INS    &kp LBRC    &kp RBRC  &kp NUMBER_7        &kp NUMBER_8        &kp NUMBER_9            &kp KP_DIVIDE
+                  &kp LSHIFT    &kp LEFT       &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &hm RSHFT NUMBER_4  &hm RCTRL NUMBER_5  &hm RIGHT_ALT NUMBER_6  &hm RIGHT_GUI MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &hm SQT COMMA  &kp DOT       &kp BSLH   &kp LPAR    &kp RPAR  &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3            &kp PLUS             &kp KP_MULTIPLY
+                                               &trans        &trans     &trans      &trans    &trans              &kp N0
             >;
         };
 
         FunSym {
             label = "FunSym";
             bindings = <
-       &kp F1             &kp F2                &kp F3                 &kp F4            &kp F5           &kp F6     &kp F7                     &kp F8                   &kp F9                    &kp F10
-       &hm LEFT_WIN EXCL  &hm LEFT_ALT AT_SIGN  &hm LEFT_CONTROL HASH  &hm LSHFT DOLLAR  &kp PERCENT      &kp CARET  &hm RIGHT_SHIFT AMPERSAND  &hm RIGHT_CONTROL ASTRK  &hm RIGHT_ALT UNDERSCORE  &hm RIGHT_WIN EQUAL
-&to 3  &kp F11            &kp F12               &kp K_PLAY_PAUSE       &kp PAGE_UP       &kp PAGE_DOWN    &kp HOME   &kp END                    &kp PRINTSCREEN          &trans                    &trans               &bootloader
-                                                &trans                 &trans            &trans           &trans     &trans                     &trans
+       &kp F1                 &kp F2                 &kp F3                     &kp F4              &kp F5           &kp F6        &kp F7              &kp F8                &kp F9               &kp F10
+       &hm LEFT_WIN NUMBER_1  &hm LEFT_ALT NUMBER_2  &hm LEFT_CONTROL NUMBER_3  &hm LSHFT NUMBER_4  &kp N5           &kp NUMBER_6  &hm RIGHT_SHIFT N7  &hm RIGHT_CONTROL N8  &hm RIGHT_ALT MINUS  &hm RIGHT_WIN EQUAL
+&to 3  &kp F11                &kp F12                &kp K_PLAY_PAUSE           &kp PAGE_UP         &kp PAGE_DOWN    &kp HOME      &kp END             &kp PRINTSCREEN       &trans               &trans               &bootloader
+                                                     &trans                     &trans              &trans           &trans        &trans              &trans
             >;
         };
 
         Gaming {
             bindings = <
-       &kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &trans  &trans  &trans  &trans  &trans
-       &kp LSHIFT        &kp Q         &kp W         &kp E         &kp R           &trans  &trans  &trans  &trans  &trans
-&to 0  &kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp F           &trans  &trans  &trans  &trans  &trans  &trans
-                                       &kp ESCAPE    &kp LEFT_ALT  &trans          &trans  &trans  &trans
+       &kp TAB           &kp Q  &kp W       &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
+       &kp LSHIFT        &kp A  &kp S       &kp D         &kp F     &trans  &trans  &trans  &trans  &trans
+&to 0  &kp LEFT_CONTROL  &kp Z  &kp X       &kp C         &kp V     &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp ESCAPE  &kp LEFT_ALT  &trans    &trans  &trans  &trans
             >;
 
             label = "Gaming";
