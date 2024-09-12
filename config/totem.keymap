@@ -43,20 +43,20 @@
         Base {
             label = "Base";
             bindings = <
-             &kp Q       &kp W       &kp E        &kp R                    &kp T        &kp Y    &kp U          &kp I        &kp O       &kp P
-             &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F             &kp G        &kp H    &hm RSHFT J    &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&mt ESC TAB  &kp Z       &kp X       &kp C        &kp V                    &kp B        &kp N    &kp M          &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
-                                     &to 1        &mt LEFT_CONTROL DELETE  &kp SPACE    &kp RET  &kp BACKSPACE  &to 2
+         &kp Q       &kp W       &kp E                 &kp R         &kp T        &kp Y    &kp U            &kp I        &kp O       &kp P
+         &hm LGUI A  &hm LALT S  &hm LCTRL D           &hm LSHIFT F  &kp G        &kp H    &hm RSHFT J      &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
+&kp ESC  &kp Z       &kp X       &kp C                 &kp V         &kp B        &kp N    &kp M            &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
+                                 &mt LEFT_CONTROL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp MINUS
             >;
         };
 
         NavMsBT {
             label = "NavMsBT";
             bindings = <
-                &bt BT_SEL 0  &bt BT_NXT  &kp UP_ARROW   &bt BT_PRV      &kp LBRC    &kp RBRC          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc MOVE_UP
-                &bt BT_SEL 1  &kp LEFT    &kp DOWN       &kp RIGHT       &kp LBKT    &kp RBKT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_DOWN
+                &bt BT_SEL 0  &bt BT_NXT  &kp UP_ARROW   &bt BT_PRV      &kp LBRC    &kp RBRC          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc MOVE_DOWN
+                &bt BT_SEL 1  &kp LEFT    &kp DOWN       &kp RIGHT       &kp LBKT    &kp RBKT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_UP
 &kp LEFT_SHIFT  &bt BT_SEL 2  &bt BT_CLR  &bt BT_DISC 0  &bt BT_CLR_ALL  &kp LPAR    &kp RPAR          &mkp MB4        &mkp MCLK       &mkp MB5         &msc MOVE_LEFT  &msc MOVE_RIGHT
-                                          &to 0          &trans          &trans      &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_WIN
+                                          &trans         &trans          &trans      &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_WIN
             >;
         };
 
@@ -65,8 +65,8 @@
             bindings = <
        &kp F1                 &kp F2                 &kp F3                     &kp F4              &kp F5           &kp F6           &kp F7              &kp F8                &kp F9            &kp F10
        &hm LEFT_WIN NUMBER_1  &hm LEFT_ALT NUMBER_2  &hm LEFT_CONTROL NUMBER_3  &hm LSHFT NUMBER_4  &kp N5           &kp NUMBER_6     &hm RIGHT_SHIFT N7  &hm RIGHT_CONTROL N8  &hm RIGHT_ALT N9  &hm RIGHT_WIN N0
-&to 3  &kp F11                &kp F12                &kp PAGE_UP                &kp PAGE_DOWN       &kp BACKSLASH    &kp PRINTSCREEN  &kp EQUAL           &kp GRAVE             &kp HOME          &kp END           &kp MINUS
-                                                     &trans                     &trans              &trans           &trans           &trans              &to 0
+&to 3  &kp F11                &kp F12                &mt PAGE_DOWN PAGE_UP      &kp INS             &kp BACKSLASH    &kp PRINTSCREEN  &kp EQUAL           &kp GRAVE             &kp HOME          &kp END           &kp MINUS
+                                                     &trans                     &trans              &trans           &trans           &trans              &trans
             >;
         };
 
